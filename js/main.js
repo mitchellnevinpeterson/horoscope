@@ -47,7 +47,7 @@ var signs = [
 	{
 	name:"Scorpio",
 	img:"img/scorpio.png",
-	discription:"Scorpions are most diverse in nature and therefore present the most interesting study. Scorpios hold grudge and would wait patiently for the right moment to strike. They are not likely to forget any act of betrayal or treachery. For Scorpios what is implied is more fascinating than the obvious. Scorpios are often described as egoists. However, some of the positive traits of Scorpios are- diplomacy, intuition, intelligence, engaging, resolute, spirituality and sensitivity.",
+	discription:"Scorpions are most diverse in nature and therefore present the most interesting study. Scorpios hold grudge and would wait patiently for the right moment to strike. They are not likely to forget any act of betrayal or treachery. For Scorpios what is implied is more fascinating than the obvious. Scorpios are often described as egoists. However, some of the positive traits of Scorpios are- diplomacy, intuition, intelligence, engaging, resolute, spirituality, and sensitivity.",
 	info:"You may not recognize just how lucky you are going to be this year, Scorpio! The Sun-Pluto conjunction of this years beginning may keep you wired, intense, and focused on your chosen work. Keep an eye out for lucky opportunities and be ready to pounce. Your modern planet Pluto will keep you sharp and intense all year long."
 	},
 	{
