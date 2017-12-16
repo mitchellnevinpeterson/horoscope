@@ -1,0 +1,95 @@
+/*Resetting the margins and padding*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*Adding a font class*/
+.fell-font {
+	font-family: 'IM Fell English SC', serif;
+}
+
+/*Adding a black text shadow class*/
+.txt-shadow-blk {
+	text-shadow: 3px 2px 1px #000;
+}
+/*adding a background image to the main section*/
+.main-section {
+	background-image: url("../img/girlScale.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 667px;
+}
+
+/*adding a background img to the footer*/
+footer {
+	background-image: url("../img/dotsBackground.png");
+	background-size: cover;
+	min-height: 300px;
+}
+
+/*Adding a class to make text white*/
+.text-white {
+	color: #fff;
+}
+
+/*changing the font of all p tags*/
+p {
+	font-size: 25px;
+	padding: 30px 40px;
+
+}
+
+/*chaning all h1 tags*/
+h1 {
+	margin: 0;
+	font-size: 50px;
+	letter-spacing: 2px;
+	padding: 40px 10px;
+}
+
+/*adding padding to the footer h6*/
+h6 {
+	font-size: 20px;
+	padding: 40px;
+	line-height: 30px;
+}
+
+/*adding margin to the submit button*/
+.btn {
+	font-size: 20px;
+	margin-top: 30px;
+	background-color: #ccffcc;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-image: url("../img/btnBack.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: center;
+	text-shadow: 2px 2px 1px #fff;
+}
+
+/*adjusting the max size of the image tag*/
+img {
+	max-width: 350px;
+	max-height: 186px;
+}
+/*changing the select appearance*/
+select {
+	background-color: #fff;
+}
+
+select:hover {
+	cursor: pointer;
+	background-image: url("../img/selectBack.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+/*-----------------------------------------------------------
+====================Media Queries==========================
+-----------------------------------------------------------*/
+
