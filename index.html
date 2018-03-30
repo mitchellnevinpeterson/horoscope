@@ -26,7 +26,7 @@
 <div class="main-section text-center">
     <div class="option-wrap">
         <h1 class="text-white text-uppercase fell-font txt-shadow-blk">Your yearly horoscope</h1>
-        <select id="select-sign">
+        <select onchange="getSignInfo()" id="select-sign">
             <option class="sign" disabled selected>What's Your Sign</option>
             <option class="sign">Aries</option>
             <option class="sign">Taurus</option>
@@ -42,9 +42,9 @@
             <option class="sign">Pisces</option>
         </select>
     </div>
-    <div>
+    <!-- <div>
         <button class="text-center btn fell-font" type="button" onclick="getSignInfo()"> Submit</button>
-    </div>
+    </div> -->
     <div class="sign-wrap text-center text-white fell-font txt-shadow-blk">
         <h1 id="sign-name"></h1>
         <img id="sign-img" src="img/zodiac.png" alt="zodiac sign">

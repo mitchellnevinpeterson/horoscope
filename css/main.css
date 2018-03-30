@@ -91,6 +91,12 @@ select:hover {
 	background-repeat: no-repeat;
 	color: #fff;
 }
+/*changing the width of the dicription footer*/
+#discription,
+.sign-wrap {
+	width: 80%;
+	margin: 0 10%;
+}
 /*-----------------------------------------------------------
 ====================Media Queries==========================
 -----------------------------------------------------------*/
