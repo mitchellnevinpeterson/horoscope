@@ -1,5 +1,6 @@
-
-
+// ------------------------------------------
+// =======JS For the yearly horoscope========
+// ------------------------------------------
 // An array of objects with sign info
 var signs = [
 	{
@@ -76,12 +77,18 @@ var signs = [
 	}
 ]
 
+// Changing the background on change for yearly scope
+function changeBG() {
+	var background = document.getElementsByClassName("main-section")[0]
+	background.setAttribute("id", "main")
+}
+
 // The fuction that grabs horoscope sign info
 
 function getSignInfo() {
 	// setting a variable to select the select tag
 		var option = document.getElementById("select-sign").selectedIndex
-	// retrieving the date value of the option tags with in the select tag
+	// retrieving the horoscope value of the option tags with in the select tag
 		var selected = document.getElementsByClassName("sign")[option].value
 	// creating a loop to go through my array of objects containing the horoscope sign info
 		for(i = 0; i < signs.length; i++) {
@@ -90,8 +97,37 @@ function getSignInfo() {
 			document.getElementById("sign-name").innerHTML = signs[i].name
 			document.getElementById("sign-img").src = signs[i].img
 			document.getElementById("sign-info").innerHTML = signs[i].info
-			document.getElementById("discription").innerHTML = signs[i].discription
+			document.getElementById("discription").innerHTML = "<h5><u>Description of a " + selected + "</u></h5>" + signs[i].discription
 			}
 		}
 }
-	
+// ------------------------------------------
+// =======JS For the daily horoscope========
+// ------------------------------------------
+function getDailyInfo() {
+	// setting a variable to select the select tag
+	var option = document.getElementById("dailySign").selectedIndex
+	// retrieving the horoscope value of the option tags with in the select tag
+	var sign = document.getElementsByClassName("day-sign")[option].value
+ 	var xhttp = new XMLHttpRequest()
+ 	xhttp.onreadystatechange = function(){
+ 		if (this.readyState == 4 && this.status == 200) {
+ 		console.log(this)
+ 		var text = this.response.horoscope.horoscope
+ 		console.log(text)
+ 		document.getElementById("sign-name").innerHTML = sign
+ 		document.getElementById("sign-info").innerHTML = text
+ 		// creating a loop to go through my array of objects containing the horoscope sign info
+		for(i = 0; i < signs.length; i++) {
+		// if the value of the option tag is the same as the object name then display the data
+			if(sign == signs[i].name) {
+			document.getElementById("sign-img").src = signs[i].img
+			}
+		}
+		}
+
+ 	}
+ 	xhttp.responseType = "json"
+ 	xhttp.open("GET", "https://cors-anywhere.herokuapp.com/http://widgets.fabulously40.com/horoscope.json?sign=" + sign, true)
+	xhttp.send()
+}

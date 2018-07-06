@@ -22,7 +22,7 @@
     
   </head>
   <body>
-       <!-- Navagation bar -->
+    <!-- Navagation bar -->
 <nav>
     <ul>
         <li><a href="index.html">Yearly</a></li>
@@ -30,27 +30,27 @@
     </ul>
 </nav>
 <!-- Main section that displays the horoscope information -->
-<div class="main-section text-center">
+<div class="main-section-daily text-center">
     <div class="option-wrap">
         
-        <h1 class="text-white text-uppercase fell-font txt-shadow-blk">Your yearly horoscope</h1>
-        <select onchange="getSignInfo(), changeBG()" id="select-sign">
-            <option class="sign" disabled selected>What's Your Sign</option>
-            <option class="sign">Aries</option>
-            <option class="sign">Taurus</option>
-            <option class="sign">Gemini</option>
-            <option class="sign">Cancer</option>
-            <option class="sign">Leo</option>
-            <option class="sign">Virgo</option>
-            <option class="sign">Libra</option>
-            <option class="sign">Scorpio</option>
-            <option class="sign">Sagittarius</option>
-            <option class="sign">Capricorn</option>
-            <option class="sign">Aquarius</option>
-            <option class="sign">Pisces</option>
+        <h1 class="text-white text-uppercase fell-font txt-shadow-blk">Your daily horoscope</h1>
+        <select onchange="getDailyInfo()" id="dailySign">
+            <option class="day-sign" disabled selected>What's Your Sign</option>
+            <option class="day-sign">Aries</option>
+            <option class="day-sign">Taurus</option>
+            <option class="day-sign">Gemini</option>
+            <option class="day-sign">Cancer</option>
+            <option class="day-sign">Leo</option>
+            <option class="day-sign">Virgo</option>
+            <option class="day-sign">Libra</option>
+            <option class="day-sign">Scorpio</option>
+            <option class="day-sign">Sagittarius</option>
+            <option class="day-sign">Capricorn</option>
+            <option class="day-sign">Aquarius</option>
+            <option class="day-sign">Pisces</option>
         </select>
     </div>
- 
+    
     <div class="sign-wrap text-center text-white fell-font txt-shadow-blk">
         <h1 id="sign-name"></h1>
         <img id="sign-img" src="img/zodiac.png" alt="zodiac sign">
@@ -68,6 +68,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <!-- Bootstrap Java Script -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
     <!-- Custom Java Script -->
     <script src="js/main.js" type="text/javascript"></script>
   </body>

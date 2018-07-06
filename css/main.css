@@ -1,3 +1,33 @@
+/*-------------------------------------------------
+==============Nav Bar Section====================
+-------------------------------------------------*/
+nav {
+	text-align: center;
+	position: absolute;
+	width: 40%;
+	height: 55px;
+	margin: 0 30%;
+}
+ul {
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+li {
+	display: inline-block;
+	padding: 0 30px;
+	padding-top: 15px;
+}
+a {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 3px 2px 1px #000;
+}
+/*-------------------------------------------------
+==============Body Section====================
+-------------------------------------------------*/
+
 /*Resetting the margins and padding*/
 * {
 	padding: 0;
@@ -11,7 +41,7 @@
 
 /*Adding a black text shadow class*/
 .txt-shadow-blk {
-	text-shadow: 3px 2px 1px #000;
+	text-shadow: 0px 2px 5px #000;
 }
 /*adding a background image to the main section*/
 .main-section {
@@ -19,7 +49,27 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	min-height: 667px;
+	/*min-height: 667px;*/
+	padding-top: 68px;
+}
+/*adding a background image to the main section daily page*/
+.main-section-daily {
+	background-image: url("../img/dailyBG.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	/*min-height: 667px;*/
+	padding-top: 68px;
+}
+
+/*adding a background image to the main section daily page*/
+#main {
+	background-image: url("../img/yearlyBG.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	/*min-height: 667px;*/
+	padding-top: 68px;
 }
 
 /*adding a background img to the footer*/
@@ -38,7 +88,6 @@ footer {
 p {
 	font-size: 25px;
 	padding: 30px 40px;
-
 }
 
 /*chaning all h1 tags*/
@@ -82,6 +131,7 @@ img {
 select {
 	background-color: #fff;
 	box-shadow: 3px 3px 1px #000;
+	font-size: 1.25rem;
 }
 
 select:hover {
@@ -100,4 +150,24 @@ select:hover {
 /*-----------------------------------------------------------
 ====================Media Queries==========================
 -----------------------------------------------------------*/
+@media(max-width: 768px) {
+	nav {
+		width: 100%;
+		margin: 0;
+	}
+	h1 {
+		margin-top: 20px;
+		font-size: 2rem;
+	}
 
+	#discription,
+	#sign-info,
+	.sign-wrap {
+		width: 90%;
+		margin: 0 5%;
+		padding: 0;
+	}
+	#discription {
+		margin-top: 15px;
+	}
+}
